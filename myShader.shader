@@ -149,7 +149,7 @@
                     
                     //change saturation based on distance from camera
                     float3 hslColor = convertRGBtoHSL(fragment_color);
-                    float saturation = 20.0f/pow(i.linear_depth,2); //adjust saturation according to linear depth
+                    float saturation = 20.0f/pow(i.linear_depth,2); //adjust saturation according to depth
                     hslColor.y = saturation;
                     fragment_color = convertHSLtoRGB(hslColor);
                     

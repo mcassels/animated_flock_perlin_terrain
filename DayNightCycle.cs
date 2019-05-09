@@ -12,15 +12,13 @@ namespace Assignment03
         public float defaultSunIntensity;
         public float defaultMoonIntensity;
         public float currentTime; //fraction of day
-        //public int dayLength = 60; //number of seconds in day
-        public int dayLength = 2000; //number of seconds in day
+        public int dayLength = 120; //number of seconds in day
 
         void Start()
         {
             defaultSunIntensity = sun.intensity;
             defaultMoonIntensity = 0.2f; //needs to be less cause it's moonlight
-            //currentTime = 0.2f;//start at sunrise
-            currentTime = 0.4f;//start at sunrise
+            currentTime = 0.2f;//start at sunrise
         }
 
         void Update()
